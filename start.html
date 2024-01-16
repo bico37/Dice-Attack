@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Attack</title>
+    <link rel="stylesheet" href="./start.css" />
+    <link rel="stylesheet" href="./Unterseiten/play.css" />
+    <script src="./charcter.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="background"></div>
+      <div class="grid">
+        <div id="headline">
+          <h1>Dice Attack</h1>
+          <div id="slogen">
+            <h2>
+              Mit jedem Wurf ein Abenteuer - <br />
+              Unser Würfelspiel macht Glück greifbar!
+            </h2>
+          </div>
+        </div>
+        <div id="bodys">
+          <div class="glow-box">
+            <div class="text">
+              <h3>Regeln:</h3>
+              <p><span id="anders">Spieler:</span>2</p>
+              <p><span id="anders">Gewinner:</span>Der Überlebende</p>
+              <p><span></span></p>
+              <h3>Anleitung:</h3>
+              <p>
+                1) Scrolle nach unten um zur
+                <span id="char">Character Auswahl</span> zu kommen
+              </p>
+              <p>
+                2) <span id="char">Wäehle</span> einen
+                <span id="char">beliebigen Character</span> der
+                <span id="char">dir Zuspricht</span> und gib
+                <span>deinen Namen</span> ein
+              </p>
+              <p>3) <span id="char">Starte</span> das Spiel</p>
+              <p>4) Lasse beide <span id="char">Spieler wüerfeln</span></p>
+              <p>5) Sei gespannt wer <span id="char">gewinnt</span></p>
+              <p>
+                6) <span id="char">Wüerfle</span> so lang
+                <span id="char">bis</span> es einen
+                <span id="char">Gewinner</span> gibt
+              </p>
+              <p>
+                7) Wenn du <span id="char">spaß</span> hattest,
+                <span id="char">spiele erneut</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="lower">
+        <div id="scrolllower">
+          <img src="./Bilder/pngegg (3).png" alt="Pfeil down" />
+          <h4>Charcater</h4>
+          <img src="./Bilder/pngegg (3).png" alt="Pfeil down" />
+        </div>
+      </div>
+      <div class="character">
+        <div class="gridC">
+          <div id="cUp">
+            <div id="input1">
+              <h5>Name des Spielers:</h5>
+              <input type="text" id="name1" value="" />
+            </div>
+            <div id="chare1" onclick="prinz1()">
+              <div id="stats">
+                <h5>Prinz</h5>
+                <div class="life">
+                    <h6>12</h6>
+                    <img src="./Bilder/elexir.png" alt="leben" />
+                </div>
+                <div class="attack">
+                  <h6>10</h6>
+                  <img src="./Bilder/Rocket.png" alt="schaden" />
+                </div>
+              </div>
+              <img src="./Bilder/prinzr.png" alt="prinz" />
+            </div>
+            <div id="chare2" onclick="ritter1()">
+              <div id="stats">
+                <h5>Ritter</h5>
+                <div class="life">
+                  <h6>20</h6>
+                  <img src="./Bilder/elexir.png" alt="leben" />
+                </div>
+                <div class="attack">
+                  <h6>8</h6>
+                  <img src="./Bilder/Rocket.png" alt="schaden" />
+                </div>
+              </div>
+              <img src="./Bilder/ritter.png" alt="ritter" />
+            </div>
+            <div id="chare3" onclick="riese1()">
+              <div id="stats">
+                <h5>Riese</h5>
+                <div class="life">
+                  <h6>30</h6>
+                  <img src="./Bilder/elexir.png" alt="leben" />
+                </div>
+                <div class="attack">
+                  <h6>5</h6>
+                  <img src="./Bilder/Rocket.png" alt="schaden" />
+                </div>
+              </div>
+              <img src="./Bilder/riese.png" alt="Riese" />
+            </div>
+          </div>
+          <!-- UNTEN -->
+          <div id="cDown">
+            <div id="input2">
+              <h5>Name des Spielers:</h5>
+              <input type="text" id="name2" value="" />
+            </div>
+            <div id="chare1_2" onclick="prinz2()">
+              <div id="stats">
+                <h5>Prinz</h5>
+                <div class="life">
+                  <h6>12</h6>
+                  <img src="./Bilder/elexir.png" alt="leben" />
+                </div>
+                <div class="attack">
+                  <h6>10</h6>
+                  <img src="./Bilder/Rocket.png" alt="schaden" />
+                </div>
+              </div>
+              <img src="./Bilder/prinzb.png" alt="prinz" />
+            </div>
+            <div id="chare2_2" onclick="ritter2()">
+              <div id="stats">
+                <h5>Ritter</h5>
+                <div class="life">
+                  <h6>20</h6>
+                  <img src="./Bilder/elexir.png" alt="leben" />
+                </div>
+                <div class="attack">
+                  <h6>8</h6>
+                  <img src="./Bilder/Rocket.png" alt="schaden" />
+                </div>
+              </div>
+              <img src="./Bilder/ritter.png" alt="ritter" />
+            </div>
+            <div id="chare3_2" onclick="riese2()">
+              <div id="stats">
+                <h5>Riese</h5>
+                <div class="life">
+                  <h6>30</h6>
+                  <img src="./Bilder/elexir.png" alt="leben" />
+                </div>
+                <div class="attack">
+                  <h6>5</h6>
+                  <img src="./Bilder/Rocket.png" alt="schaden" />
+                </div>
+              </div>
+              <img src="./Bilder/riese.png" alt="Riese" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="submit">
+        <div onclick="submit()">
+          <img src="./Bilder/submit.png" alt="submit" />
+        </div>
+      </div>
+    </div>
+
+    <!-- PlAY-------------------------------------------------------------------->
+    <div id="play" style="display: none">
+      <div class="backgroundPlay"></div>
+      <div id="headline">
+        <h1>Dice Attack - Play</h1>
+      </div>
+      <div id="rollDicePlay" onclick="rollDice()">
+        <p>Roll Dice</p>
+      </div>
+      <div id="playAgain" onclick="playAgain()" style="display: none;">
+        <p>Play Again</p>
+      </div>
+      <div id="endGame" onclick="endGame()">
+        <p>End Game</p>
+      </div>
+      <div id="PlayGrid">
+        <div class="player1">
+          <div id="PlayName1"></div>
+          <div id="stats1">
+            <div id="player1damage"></div>
+            <div id="player1lives"></div>
+          </div>
+          <div id="tower1">
+            <img src="./Bilder/RED/towerP.png" alt="tower" />
+          </div>
+          <div id="charPic1"></div>
+          <div id="diceImg1"></div>
+        </div>
+        <div class="player2">
+          <div id="PlayName2"></div>
+          <div id="stats2">
+            <div id="player2damage"></div>
+            <div id="player2lives"></div>
+          </div>
+          <div id="tower2">
+            <img src="./Bilder/BLUE/towerBlue.png" alt="tower"/>
+          </div>
+          <div id="charPic2"></div>
+          <div id="diceImg2"></div>
+        </div>
+      </div>
+      <div id="winner" style="display: none;"></div>
+    </div>
+    <div id="endedGame" style="display: none;">
+      <div id="winnerOfEnd"></div>
+        
+    </div>
+  </body>
+  </html>
+  

@@ -1,0 +1,333 @@
+@font-face {
+    font-family: h1;
+    src: url(./Schriftart/neon2.ttf);
+}
+@font-face {
+    font-family: slogen;
+    src: url(./Schriftart/Rubber.ttf);
+}
+@font-face {
+    font-family: h3;
+    src: url(./Schriftart/Super\ Candy.ttf);
+}
+@font-face {
+    font-family: p;
+    src: url(./Schriftart/KGCorneroftheSky.ttf);
+}
+@font-face {
+    font-family: candy;
+    src: url(./Schriftart/JumboSale\ Trial.otf);
+}
+@font-face {
+    font-family: chars;
+    src: url(./Schriftart/Millano.otf);
+}
+@font-face {
+    font-family: cr;
+    src: url(./Schriftart/You\ Blockhead.ttf);
+}
+*{
+    /* outline: red dotted 2px; */
+
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-image: url(./../Bilder/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: h1;
+    font-size: 7rem;
+    font-weight: bold;
+    color: #fff; /* Farbe des Textes */
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f;
+    /* Textschatten erzeugen */
+    animation: flicker 1.75s infinite alternate;
+    /* Flicker-Effekt hinzufügen */
+    
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    margin-top: 1vw;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/* Players */
+#PlayGrid{
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    display: grid;  
+    grid-template-columns: 48% 48%;
+    grid-gap: 5vw;
+}
+/* PLAYER 1 */
+.player1{
+    grid-column: 1;
+    /* ------------- */
+    height: 40vw;
+    background-color: rgba(255, 0, 0, 0.749);
+    border-radius: 1vw;
+
+    padding-left: 1vw;
+}
+/* PLAYER 2 */
+.player2{
+    grid-column: 2;
+    /* ------------- */
+    height: 40vw;
+    background-color: rgba(0, 81, 255, 0.749);    
+    border-radius: 1vw;
+
+    padding-left: 1vw;
+}
+/* NAMES */
+#PlayName1{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+#PlayName2{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+h6{
+    font-family: cr;
+    font-size: 1.3em;
+}
+/* TOWER */
+#tower1 img{
+    position: absolute;
+    width: 30vw;
+
+    left: -2%;
+    top: 60%;
+}
+#tower2 img{
+    position: absolute;
+    width: 30vw;
+
+    right: -2%;
+    top: 60%;
+}
+/* CHAR 1 Pic */
+#charPic1 img{
+    position: absolute;
+    width: 7vw;
+
+    top:  53%;
+    left: 11%;
+}
+#charPic2 img{
+    position: absolute;
+    width: 7vw;
+
+    top: 53%;
+    right: 9%;
+}
+/* STATS1 */
+#stats1{
+    display: flex;
+    flex-direction: column;
+}
+#player1lives img{
+    width: 3vw;
+    margin: 0.1vw;
+}
+#player1damage img{
+    width: 3vw;
+    margin: 0.1vw;
+}
+/* STATS 2 */
+#stats2{
+    display: flex;
+    flex-direction: column;
+}
+#player2lives img{
+    width: 3vw;
+    margin: 0.1vw;
+}
+#player2damage img{
+    width: 3vw;
+    margin: 0.1vw;
+}
+
+#rollDicePlay p{
+    position: absolute;
+    left: 39%;
+    right: 40%;
+    top: 70%;
+
+    width: 20%;
+    font-size: 1.6rem;
+    font-family: candy;
+    text-align: center;
+
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 81, 255));
+    border: rgb(150, 150, 150) 5px solid;
+
+    padding: 1.4%;
+
+    border-radius: 1vw;
+
+    transition: all 0.7s ease-in-out;
+
+    z-index: 1;
+    color: #fff;
+}
+
+#rollDicePlay p:hover{
+    transform: scale(1.1);
+    font-size: 1.8rem;
+
+    border: rgb(65, 0, 80) 5px solid; ;
+    z-index: 1;
+}
+
+#playAgain{
+    position: absolute;
+    left: 39%;
+    right: 40%;
+    top: 86%;
+
+    width: 20%;
+    font-size: 1rem;
+    font-family: p;
+    text-align: center;
+
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 81, 255));
+    border: rgb(52, 52, 52) 5px solid;
+
+    padding: 1.4%;
+
+    border-radius: 1vw;
+
+    transition: all 0.7s ease-in-out;
+}
+#playAgain:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+
+
+#diceImg1 img{
+    position: absolute;
+    left: 28%;
+    top: 63%;
+    width: 10vw;
+    border: rgb(201, 3, 3) 5px solid;
+}
+#diceImg2 img{
+    position: absolute;
+    right: 27%;
+    top: 64%;
+    width: 10vw;
+    /* border: rgb(0, 9, 103) 2px solid; */
+}
+/* Winner */
+#winner h6{
+    position: absolute;
+    left: 28.3%;
+    right: 40%;
+    top: 70%;
+
+    width: 40%;
+    font-size: 1.3rem;
+    font-family: cr;
+    text-align: center;
+
+    background-color: rgb(110, 0, 37);
+    border: rgb(147, 0, 0) 5px solid;
+
+    padding: 1.4%;
+
+    border-radius: 1vw;
+    
+    z-index: 2;
+}
+#endGame{
+    position: absolute;
+    right: 1%;
+    top: 9%;
+
+    padding: 1%;
+    width: 8%;
+
+    background-color: rgba(75, 0, 82, 0.909);
+    border-radius: 1vw;
+    border: rgba(128, 0, 128, 0.97) 3px solid;
+
+    transition: all 0.5s ease;
+    
+}
+
+#endGame:hover{
+    transform: scale(1.1);
+}
+
+#endGame p{
+    text-align: center;
+
+    color: #fff;
+    text-shadow: 0 0 10px rgb(255, 0, 212),
+    0 0 10px rgb(255, 0, 212),
+    0 0 10px rgb(255, 0, 212);
+}
+
+/* ENDET GAME */
+#winnerOfEnd{
+    position: absolute;
+    left: 37%;
+    bottom: 40%;
+
+    margin-top: 30%;
+
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-right: 2vw;
+
+    
+
+    background-color: rgb(255, 73, 213);
+    border: 8px rgb(166, 0, 166) solid;
+    border-radius: 2%;
+    width: 30%;
+    height: 40%;
+    
+}
+#winnerOfEnd p{
+    font-size: 1.6rem;
+    font-family: p;
+}
+hr{
+    margin-bottom: 1vw;
+}
+#backStart{
+    padding-top: 5vw;
+    font-size: 2rem;
+    font-family: char;
+}

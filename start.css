@@ -1,0 +1,367 @@
+@font-face {
+    font-family: h1;
+    src: url(./Schriftart/neon2.ttf);
+}
+@font-face {
+    font-family: slogen;
+    src: url(./Schriftart/Rubber.ttf);
+}
+@font-face {
+    font-family: h3;
+    src: url(./Schriftart/Super\ Candy.ttf);
+}
+@font-face {
+    font-family: p;
+    src: url(./Schriftart/KGCorneroftheSky.ttf);
+}
+@font-face {
+    font-family: candy;
+    src: url(./Schriftart/JumboSale\ Trial.otf);
+}
+@font-face {
+    font-family: chars;
+    src: url(./Schriftart/Millano.otf);
+}
+@font-face {
+    font-family: cr;
+    src: url(./Schriftart/You\ Blockhead.ttf);
+}
+*{
+    /* outline: red dotted 2px; */
+
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(./Bilder/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    font-family: h1;
+    font-size: 7rem;
+    font-weight: bold;
+    color: #fff; /* Farbe des Textes */
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f;
+    /* Textschatten erzeugen */
+    animation: flicker 0.75s infinite alternate;
+    /* Flicker-Effekt hinzufügen */
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    margin-top: 0vw;
+}
+
+
+h2{
+    font-family: slogen;
+    font-size: 1,7rem;
+    color: rgb(20, 0, 202);
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgb(188, 0, 0), 0 0 20px rgb(188, 0, 0), 0 0 30px rgb(188, 0, 0), 0 0 40px rgb(188, 0, 0), 0 0 50px rgb(188, 0, 0), 0 0 60px rgb(188, 0, 0), 0 0 70px rgb(188, 0, 0);
+    animation: bounce 2s infinite;
+
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+}
+#slogen{
+    margin-top: 1vw;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+
+.glow-box {
+    width: 80%;
+    height: 29vw;
+    background-color: rgba(0, 0, 0, 0.77);
+    border-radius: 1vw;
+    box-shadow: 0 0 100px #3498db, 0 0 200px #8e44ad, 0 0 300px #e74c3c;
+
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.text{
+    color: white;
+    margin-left: 1vw;
+}
+h3{
+    font-family: h3;
+    font-size: 2rem;
+
+    padding-bottom: 1vw;
+    text-shadow: #8e44ad 6px 6px 6px;
+
+}
+p{
+    font-family: p;
+    font-size: 1.1rem;
+
+    padding-bottom: 0.5vw;
+
+    text-shadow: 10px 10px 40px rgb(221, 146, 146);
+}
+
+#anders{
+    font-family: candy;
+    font-size: 1.5rem;
+    padding-right: 1vw;
+
+    color: rgb(0, 56, 159);
+    text-shadow: 0 0 10px rgb(255, 0, 212), 
+    0 0 20px rgb(255, 0, 212), 
+    0 0 30px rgb(255, 0, 212);
+}
+#char{
+    font-family: chars;
+    font-size: 1.6rem;
+    color: rgb(255, 0, 212);
+
+    text-shadow: 0 0 10px #1c23d6, 
+    0 0 20px #1c23d6, 
+    0 0 30px #1c23d6;
+}
+
+
+/* Weiter unten */  
+#scrolllower img{
+    width: 5vw;
+}
+#lower{
+    margin-top: 1vw;
+}
+#scrolllower{
+    display: flex;
+    margin-left: 33%;
+
+    animation: bounce 1s infinite alternate;
+}
+
+h4{
+  font-size: 4rem;  
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+  font-family: candy;
+  color: #3498db;
+
+  text-shadow: 0 0 10px #000000, 
+    0 0 20px #172ec3, 
+    0 0 30px #161ba5;
+}
+.character{
+    margin-top: 5vw;
+}
+.gridC{
+    display: grid;
+    grid-template-rows: 53% 53%;
+}
+
+/* UP */
+#cUp{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5vw;
+
+    background-color: rgba(255, 0, 0, 0.749);
+    
+}
+#input1{
+    grid-column: 1;
+}
+#chare1{
+    grid-column: 2;
+    height: 20vw;
+
+    background-color: rgb(150, 0, 0);
+    border-radius: 1vw;
+    margin-top: 2vw;
+
+}
+#chare2{
+    grid-column: 3;
+    height: 20vw;
+
+    background-color: rgb(150, 0, 0);
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+#chare3{
+    grid-column: 4;
+    height: 20vw;
+
+    background-color: rgb(150, 0, 0);
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+#chare3 img{
+    margin-top: 1vw;
+}
+#cUp h5{
+    font-family: cr;
+    font-size: 1rem;
+    padding-left: 1vw;
+    padding: 1vw;
+
+    color: white;
+}
+#name1{
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-left: 0.6vw;
+
+    font-family: cr;
+    font-size: 1rem ;
+}
+#cUp img{
+    width: 13vw;
+    margin-left: 3.4vw;
+}
+
+/* Down */
+
+#cDown{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5vw;
+
+    background-color: rgba(0, 81, 255, 0.749);
+    
+}
+#input2{
+    grid-column: 1;
+}
+#chare1_2{
+    grid-column: 2;
+    height: 20vw;
+
+    background-color: rgb(33, 0, 163);
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+
+#chare2_2{
+    grid-column: 3;
+    height: 20vw;
+
+    background-color: rgb(33, 0, 163);
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+#chare3_2{
+    grid-column: 4;
+    height: 20vw;
+
+    background-color: rgb(33, 0, 163);
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+#chare3_2 img{
+    margin-top: 1vw;
+}
+#cDown h5{
+    font-family: cr;
+    font-size: 1rem;
+    padding-left: 1vw;
+    padding: 1vw;
+
+    color: white;
+}
+#name2{
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-left: 0.6vw;
+
+    font-family: cr;
+    font-size: 1rem ;
+}
+#cDown img{
+    width: 13vw;
+    margin-left: 4.3vw;
+}
+
+#chare1_2 img{
+    width: 11vw;
+}
+
+/* HOVER */
+#chare1, #chare2, #chare3{
+    transition: transform 0.5s ease-in;
+}
+#chare1:hover, #chare2:hover, #chare3:hover{
+    transform: scale(1.1);
+}
+
+#chare1_2, #chare2_2, #chare3_2{
+    transition: transform 0.5s ease-in;
+}
+#chare1_2:hover, #chare2_2:hover, #chare3_2:hover{
+    transform: scale(1.1);
+}
+/* stats */
+#stats{
+    display: flex;
+}
+#stats img{
+    width: 2vw;
+    position: relative;
+}
+
+.life{
+    grid-template-columns: 50% 50%;
+}
+h6{
+    font-size: 1rem;
+}
+
+.submit{
+    width: 20vw;
+    position: absolute;
+    top: 88vw;
+    left: 1vw;
+}
+.submit img{
+    width: 18vw;
+}
